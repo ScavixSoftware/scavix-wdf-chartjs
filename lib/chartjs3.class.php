@@ -33,12 +33,12 @@ use ScavixWDF\Base\DateTimeEx;
 /**
  * Represents a Chart.js chart
  *
- * @attribute[Resource('chartjs3/chart.min.js')]
- * @attribute[Resource('chartjs3/luxon.js')]
- * @attribute[Resource('chartjs3/chartjs-adapter-luxon.js')]
- * @attribute[Resource('chartjs3/chartjs-plugin-trendline.js')]
- * @attribute[Resource('chartjs3/chartjs-plugin-datalabels.js')]
- * @attribute[Resource('chartjs3/canvas2svg.js')]
+ * @attribute[Resource('chart.min.js')]
+ * @attribute[Resource('luxon.js')]
+ * @attribute[Resource('chartjs-adapter-luxon.js')]
+ * @attribute[Resource('chartjs-plugin-trendline.js')]
+ * @attribute[Resource('chartjs-plugin-datalabels.js')]
+ * @attribute[Resource('canvas2svg.js')]
  */
 class ChartJS3 extends Control
 {
