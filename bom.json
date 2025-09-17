@@ -1,0 +1,523 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-09-17T07:14:07.756Z",
+    "manufacturer": {
+      "name": "Scavix Software GmbH & Co. KG",
+      "url": [
+        "https://www.scavix.com"
+      ]
+    },
+    "component": {
+      "type": "library",
+      "bom-ref": "pkg:composer/scavix/wdf-chartjs@1.0.1",
+      "purl": "pkg:composer/scavix/wdf-chartjs@1.0.1",
+      "group": "scavix",
+      "name": "wdf-chartjs",
+      "version": "1.0.1",
+      "supplier": {
+        "name": "Scavix Software GmbH & Co. KG",
+        "url": [
+          "https://www.scavix.com"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Scavix Software GmbH & Co. KG",
+          "email": "info@scavix.com"
+        },
+        {
+          "name": "Christoph Bünger"
+        },
+        {
+          "name": "Daniel Spors"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "description": "ChartJS components"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:composer/scavix/wdf-chartjs@1.0.1",
+      "purl": "pkg:composer/scavix/wdf-chartjs@1.0.1",
+      "group": "scavix",
+      "name": "wdf-chartjs",
+      "version": "1.0.1",
+      "supplier": {
+        "name": "Scavix Software GmbH & Co. KG",
+        "url": [
+          "https://www.scavix.com"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Scavix Software GmbH & Co. KG",
+          "email": "info@scavix.com"
+        },
+        {
+          "name": "Christoph Bünger"
+        },
+        {
+          "name": "Daniel Spors"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "description": "ChartJS components"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:composer/scavix/wdf-core@1.0.2",
+      "purl": "pkg:composer/scavix/wdf-core@1.0.2",
+      "group": "scavix",
+      "name": "wdf-core",
+      "version": "1.0.2",
+      "supplier": {
+        "name": "Scavix Software GmbH & Co. KG",
+        "url": [
+          "https://www.scavix.com"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Scavix Software GmbH & Co. KG",
+          "email": "info@scavix.com"
+        },
+        {
+          "name": "Christoph Bünger"
+        },
+        {
+          "name": "Daniel Spors"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "description": "Core components"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:composer/scavix/lessphp@v0.8.1",
+      "purl": "pkg:composer/scavix/lessphp@v0.8.1",
+      "group": "scavix",
+      "name": "lessphp",
+      "version": "v0.8.1",
+      "supplier": {
+        "name": "Scavix Software GmbH & Co. KG",
+        "url": [
+          "https://www.scavix.com"
+        ]
+      },
+      "authors": [
+        {
+          "name": "Leaf Corcoran",
+          "email": "leafot@gmail.com"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "description": "lessphp is a compiler for LESS written in PHP."
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:jQuery@3.7.1",
+      "group": "external",
+      "name": "jQuery",
+      "version": "3.7.1",
+      "description": "jQuery is a fast, small, and feature-rich JavaScript library.",
+      "authors": [
+        {
+          "name": "OpenJS Foundation and other contributors"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://jquery.com/"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:jQuery@3.7.1/res/jquery.js",
+          "group": "files",
+          "name": "res/jquery.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://code.jquery.com/jquery-3.7.1.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:jQuery UI@1.14.1",
+      "group": "external",
+      "name": "jQuery UI",
+      "version": "1.14.1",
+      "description": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+      "authors": [
+        {
+          "name": "OpenJS Foundation and other contributors"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://jqueryui.com/"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:jQuery UI@1.14.1/res/jquery-ui/jquery-ui.js",
+          "group": "files",
+          "name": "res/jquery-ui/jquery-ui.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://cdn.jsdelivr.net/npm/jquery-ui@1.14.1/dist/jquery-ui.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:Canvas2Svg@1.0.19",
+      "group": "external",
+      "name": "Canvas2Svg",
+      "version": "1.0.19",
+      "description": "Translates HTML5 Canvas draw commands to SVG",
+      "authors": [
+        {
+          "name": "Kerry Liu"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/gliffy/canvas2svg"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:Canvas2Svg@1.0.19/res/canvas2svg.js",
+          "group": "files",
+          "name": "res/canvas2svg.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://raw.githubusercontent.com/gliffy/canvas2svg/a0125f30a80b2c677896d3e7896c7b908a28b495/canvas2svg.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:Chart.js@4.5.0",
+      "group": "external",
+      "name": "Chart.js",
+      "version": "4.5.0",
+      "description": "Simple HTML5 charts using the canvas element.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.chartjs.org/"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:Chart.js@4.5.0/res/chart.min.js",
+          "group": "files",
+          "name": "res/chart.min.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:Luxon@3.7.1",
+      "group": "external",
+      "name": "Luxon",
+      "version": "3.7.1",
+      "description": "A powerful, modern, and friendly wrapper for JavaScript dates and times.",
+      "authors": [
+        {
+          "name": "Isaac Cambron"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://moment.github.io/luxon/"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:Luxon@3.7.1/res/luxon.js",
+          "group": "files",
+          "name": "res/luxon.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://unpkg.com/luxon@3.7.1/build/global/luxon.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:chartjs-adapter-luxon@1.3.1",
+      "group": "external",
+      "name": "chartjs-adapter-luxon",
+      "version": "1.3.1",
+      "description": "Luxon adapter for Chart.js",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/chartjs/chartjs-adapter-luxon"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:chartjs-adapter-luxon@1.3.1/res/chartjs-adapter-luxon.js",
+          "group": "files",
+          "name": "res/chartjs-adapter-luxon.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:chartjs-plugin-datalabels@2.2.0",
+      "group": "external",
+      "name": "chartjs-plugin-datalabels",
+      "version": "2.2.0",
+      "description": "Highly customizable Chart.js plugin that displays labels on data for any type of charts.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://chartjs-plugin-datalabels.netlify.app/"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:chartjs-plugin-datalabels@2.2.0/res/chartjs-plugin-datalabels.js",
+          "group": "files",
+          "name": "res/chartjs-plugin-datalabels.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:chartjs-plugin-stacked100@1.7.0",
+      "group": "external",
+      "name": "chartjs-plugin-stacked100",
+      "version": "1.7.0",
+      "description": "This plugin for Chart.js that makes your bar chart to 100% stacked bar chart.",
+      "authors": [
+        {
+          "name": "y-takey"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/y-takey/chartjs-plugin-stacked100"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:chartjs-plugin-stacked100@1.7.0/res/chartjs-plugin-stacked100.js",
+          "group": "files",
+          "name": "res/chartjs-plugin-stacked100.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.7.0/build/index.min.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "external:chartjs-plugin-trendline@3.0.0",
+      "group": "external",
+      "name": "chartjs-plugin-trendline",
+      "version": "3.0.0",
+      "description": "This plugin draws linear and exponential trendlines in your Chart.",
+      "authors": [
+        {
+          "name": "Marcus Alsterfjord"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Makanz/chartjs-plugin-trendline"
+        }
+      ],
+      "components": [
+        {
+          "type": "file",
+          "bom-ref": "file:chartjs-plugin-trendline@3.0.0/res/chartjs-plugin-trendline.js",
+          "group": "files",
+          "name": "res/chartjs-plugin-trendline.js",
+          "externalReferences": [
+            {
+              "type": "distribution",
+              "url": "https://raw.githubusercontent.com/Makanz/chartjs-plugin-trendline/refs/tags/v3.0.0/dist/chartjs-plugin-trendline.min.js"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:composer/scavix/wdf-chartjs@1.0.1",
+      "dependsOn": [
+        "pkg:composer/scavix/wdf-core@1.0.2",
+        "external:Canvas2Svg@1.0.19",
+        "external:Chart.js@4.5.0",
+        "external:Luxon@3.7.1",
+        "external:chartjs-adapter-luxon@1.3.1",
+        "external:chartjs-plugin-datalabels@2.2.0",
+        "external:chartjs-plugin-stacked100@1.7.0",
+        "external:chartjs-plugin-trendline@3.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:composer/scavix/wdf-core@1.0.2",
+      "dependsOn": [
+        "pkg:composer/scavix/lessphp@v0.8.1",
+        "external:jQuery@3.7.1",
+        "external:jQuery UI@1.14.1"
+      ]
+    },
+    {
+      "ref": "pkg:composer/scavix/lessphp@v0.8.1",
+      "dependsOn": []
+    }
+  ]
+}
