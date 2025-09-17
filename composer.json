@@ -60,6 +60,7 @@
                 "homepage": "https://moment.github.io/luxon/",
                 "description": "A powerful, modern, and friendly wrapper for JavaScript dates and times.",
                 "license": "MIT",
+                "author": "Isaac Cambron",
                 "files":
                 {
                     "res/luxon.js": "https://unpkg.com/luxon@3.7.1/build/global/luxon.min.js"
@@ -93,6 +94,7 @@
                 "homepage": "https://github.com/y-takey/chartjs-plugin-stacked100",
                 "description": "This plugin for Chart.js that makes your bar chart to 100% stacked bar chart.",
                 "license": "MIT",
+                "author": "y-takey",
                 "files":
                 {
                     "res/chartjs-plugin-stacked100.js": "https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.7.0/build/index.min.js"
@@ -104,6 +106,7 @@
                 "homepage": "https://github.com/Makanz/chartjs-plugin-trendline",
                 "description": "This plugin draws linear and exponential trendlines in your Chart.",
                 "license": "MIT",
+                "author": "Marcus Alsterfjord",
                 "files":
                 {
                     "res/chartjs-plugin-trendline.js": "https://raw.githubusercontent.com/Makanz/chartjs-plugin-trendline/refs/tags/v3.0.0/dist/chartjs-plugin-trendline.min.js"
