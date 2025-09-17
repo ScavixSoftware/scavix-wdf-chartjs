@@ -1,117 +1,107 @@
 {
-	"name": "scavix/wdf-chartjs",
-	"version": "1.0.2",
-	"description": "ChartJS components",
-	"type": "library",
-	"license": "LGPL-3.0-or-later",
-    "authors": [
-		{
-			"name": "Scavix Software GmbH & Co. KG",
-			"email": "info@scavix.com",
-			"homepage": "http://www.scavix.com/"
-		},
-		{
-			"name": "Christoph Bünger",
-			"homepage": "https://github.com/christophbue"
-		},
-		{
-			"name": "Daniel Spors",
-			"homepage": "https://github.com/DaSpors"
-		}
-	],
-	"autoload": {
-		"files": [
-			"bootstrap.php"
-		]
-	},
-	"require": {
-        "scavix/wdf-core": "^1.0.2"
-	},
-    "extra":
+  "name": "scavix/wdf-chartjs",
+  "description": "ChartJS components",
+  "type": "library",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
     {
-        "externals":
-        [
-            {
-                "name": "Canvas2Svg",
-                "version": "1.0.19",
-                "homepage": "https://github.com/gliffy/canvas2svg",
-                "author": "Kerry Liu",
-                "description": "Translates HTML5 Canvas draw commands to SVG",
-                "license": "MIT",
-                "files":
-                {
-                    "res/canvas2svg.js": "https://raw.githubusercontent.com/gliffy/canvas2svg/a0125f30a80b2c677896d3e7896c7b908a28b495/canvas2svg.js"
-                }
-            },
-            {
-                "name": "Chart.js",
-                "version": "4.5.0",
-                "homepage": "https://www.chartjs.org/",
-                "description": "Simple HTML5 charts using the canvas element.",
-                "license": "MIT",
-                "files":
-                {
-                    "res/chart.min.js": "https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"
-                }
-            },
-            {
-                "name": "Luxon",
-                "version": "3.7.1",
-                "homepage": "https://moment.github.io/luxon/",
-                "description": "A powerful, modern, and friendly wrapper for JavaScript dates and times.",
-                "license": "MIT",
-                "author": "Isaac Cambron",
-                "files":
-                {
-                    "res/luxon.js": "https://unpkg.com/luxon@3.7.1/build/global/luxon.min.js"
-                }
-            },
-            {
-                "name": "chartjs-adapter-luxon",
-                "version": "1.3.1",
-                "homepage": "https://github.com/chartjs/chartjs-adapter-luxon",
-                "description": "Luxon adapter for Chart.js",
-                "license": "MIT",
-                "files":
-                {
-                    "res/chartjs-adapter-luxon.js": "https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"
-                }
-            },
-            {
-                "name": "chartjs-plugin-datalabels",
-                "version": "2.2.0",
-                "homepage": "https://chartjs-plugin-datalabels.netlify.app/",
-                "description": "Highly customizable Chart.js plugin that displays labels on data for any type of charts.",
-                "license": "MIT",
-                "files":
-                {
-                    "res/chartjs-plugin-datalabels.js": "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"
-                }
-            },
-            {
-                "name": "chartjs-plugin-stacked100",
-                "version": "1.7.0",
-                "homepage": "https://github.com/y-takey/chartjs-plugin-stacked100",
-                "description": "This plugin for Chart.js that makes your bar chart to 100% stacked bar chart.",
-                "license": "MIT",
-                "author": "y-takey",
-                "files":
-                {
-                    "res/chartjs-plugin-stacked100.js": "https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.7.0/build/index.min.js"
-                }
-            },
-            {
-                "name": "chartjs-plugin-trendline",
-                "version": "3.0.0",
-                "homepage": "https://github.com/Makanz/chartjs-plugin-trendline",
-                "description": "This plugin draws linear and exponential trendlines in your Chart.",
-                "license": "MIT",
-                "author": "Marcus Alsterfjord",
-                "files":
-                {
-                    "res/chartjs-plugin-trendline.js": "https://raw.githubusercontent.com/Makanz/chartjs-plugin-trendline/refs/tags/v3.0.0/dist/chartjs-plugin-trendline.min.js"
-                }
-            }
-        ]
+      "name": "Scavix Software GmbH & Co. KG",
+      "email": "info@scavix.com",
+      "homepage": "http://www.scavix.com/"
+    },
+    {
+      "name": "Christoph Bünger",
+      "homepage": "https://github.com/christophbue"
+    },
+    {
+      "name": "Daniel Spors",
+      "homepage": "https://github.com/DaSpors"
     }
+  ],
+  "autoload": {
+    "files": [
+      "bootstrap.php"
+    ]
+  },
+  "require": {
+    "scavix/wdf-core": "^1.0.2"
+  },
+  "extra": {
+    "externals": [
+      {
+        "name": "Canvas2Svg",
+        "version": "1.0.19",
+        "homepage": "https://github.com/gliffy/canvas2svg",
+        "author": "Kerry Liu",
+        "description": "Translates HTML5 Canvas draw commands to SVG",
+        "license": "MIT",
+        "files": {
+          "res/canvas2svg.js": "https://raw.githubusercontent.com/gliffy/canvas2svg/a0125f30a80b2c677896d3e7896c7b908a28b495/canvas2svg.js"
+        }
+      },
+      {
+        "name": "Chart.js",
+        "version": "4.5.0",
+        "homepage": "https://www.chartjs.org/",
+        "description": "Simple HTML5 charts using the canvas element.",
+        "license": "MIT",
+        "files": {
+          "res/chart.min.js": "https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"
+        }
+      },
+      {
+        "name": "Luxon",
+        "version": "3.7.1",
+        "homepage": "https://moment.github.io/luxon/",
+        "description": "A powerful, modern, and friendly wrapper for JavaScript dates and times.",
+        "license": "MIT",
+        "author": "Isaac Cambron",
+        "files": {
+          "res/luxon.js": "https://unpkg.com/luxon@3.7.1/build/global/luxon.min.js"
+        }
+      },
+      {
+        "name": "chartjs-adapter-luxon",
+        "version": "1.3.1",
+        "homepage": "https://github.com/chartjs/chartjs-adapter-luxon",
+        "description": "Luxon adapter for Chart.js",
+        "license": "MIT",
+        "files": {
+          "res/chartjs-adapter-luxon.js": "https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"
+        }
+      },
+      {
+        "name": "chartjs-plugin-datalabels",
+        "version": "2.2.0",
+        "homepage": "https://chartjs-plugin-datalabels.netlify.app/",
+        "description": "Highly customizable Chart.js plugin that displays labels on data for any type of charts.",
+        "license": "MIT",
+        "files": {
+          "res/chartjs-plugin-datalabels.js": "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"
+        }
+      },
+      {
+        "name": "chartjs-plugin-stacked100",
+        "version": "1.7.0",
+        "homepage": "https://github.com/y-takey/chartjs-plugin-stacked100",
+        "description": "This plugin for Chart.js that makes your bar chart to 100% stacked bar chart.",
+        "license": "MIT",
+        "author": "y-takey",
+        "files": {
+          "res/chartjs-plugin-stacked100.js": "https://cdn.jsdelivr.net/npm/chartjs-plugin-stacked100@1.7.0/build/index.min.js"
+        }
+      },
+      {
+        "name": "chartjs-plugin-trendline",
+        "version": "3.0.0",
+        "homepage": "https://github.com/Makanz/chartjs-plugin-trendline",
+        "description": "This plugin draws linear and exponential trendlines in your Chart.",
+        "license": "MIT",
+        "author": "Marcus Alsterfjord",
+        "files": {
+          "res/chartjs-plugin-trendline.js": "https://raw.githubusercontent.com/Makanz/chartjs-plugin-trendline/refs/tags/v3.0.0/dist/chartjs-plugin-trendline.min.js"
+        }
+      }
+    ]
+  }
 }
