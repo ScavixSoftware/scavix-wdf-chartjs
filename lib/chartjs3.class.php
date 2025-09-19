@@ -237,7 +237,7 @@ class ChartJS3 extends Control
 
         foreach( $this->series as $i=>&$series )
         {
-            if( ifavail($series,'isPieData') )
+            if( !empty($series['isPieData']) )
             {
                 if($this->series_order)
                 {
@@ -264,7 +264,7 @@ class ChartJS3 extends Control
                     unset($row['xval']);
             });
 
-            if( count($series['data']) < 100 || ifavail($series,'raw_large_datasets') )
+            if( count($series['data']) < 100 || !empty($series['raw_large_datasets']) )
                 continue;
             $series['type'] = 'line';
             $series['fill'] = false;
@@ -352,7 +352,7 @@ class ChartJS3 extends Control
         foreach( $this->series as $i=>$s )
         {
             //log_debug("[$index] series $i",$s);
-            if( $all || ifavail($s,'name') == "$index" || "$index" == "$i" )
+            if( $all || ($s['name']??'') == "$index" || "$index" == "$i" )
             {
                 if( $value === null )
                     return $this->conf("data.datasets.$i.$name");
@@ -551,12 +551,14 @@ class ChartJS3 extends Control
         return $this;
     }
 
-    protected function getColor($name=false,$label=false,$value=false)
+    protected function getColor($name = false, $label = false, $value = false)
     {
-        if( $value && $this->colorRange )
-            return "".$this->colorRange->fromValue($value);
-        $col = ifavail($this->named_colors,$name,$label);
-        return $col?$col:($this->colors[($this->currentColor++)%count($this->colors)]);
+        if ($value && $this->colorRange)
+            return "" . $this->colorRange->fromValue($value);
+        return $this->named_colors[$name]
+            ?? $this->named_colors[$label]
+            ?? ($this->colors[($this->currentColor++) % count($this->colors)])
+            ?? '#000';
     }
 
     /**
@@ -641,7 +643,7 @@ class ChartJS3 extends Control
             $d = [];
             foreach( $data as $r )
             {
-                if( ifavail($r,$series_row) != $series )
+                if( ($r[$series_row]??'') != $series )
                     continue;
 
                 if( $pointdatacallback && is_callable($pointdatacallback) )
@@ -745,7 +747,7 @@ class ChartJS3 extends Control
             {
                 $series_total += $point['y'];
                 $data[$point['x']]['data'][$series['name']] = $point['y'];
-                $data[$point['x']]['xval'] = ifavail($point,'xval','x');
+                $data[$point['x']]['xval'] = $point['xval'] ?? $point['x'] ?? null;
                 $data[$point['x']]['total'] = (isset($data[$point['x']]['total']))
                     ?$data[$point['x']]['total']+$point['y']
                     :$point['y'];
@@ -774,11 +776,11 @@ class ChartJS3 extends Control
 
     protected function sortHarmonizedValues()
     {
-        foreach( $this->series as &$series )
-            usort($series['data'], function($a,$b)
+        foreach ($this->series as &$series)
+            usort($series['data'], function ($a, $b)
             {
-                $a = ifavail($a,'xval','x');
-                $b = ifavail($b,'xval','x');
+                $a = $a['xval'] ?? $a['x'] ?? null;
+                $b = $b['xval'] ?? $b['x'] ?? null;
                 return $a<$b?-1:($a>$b?1:0);
             });
     }
@@ -791,7 +793,7 @@ class ChartJS3 extends Control
         $cb = is_callable($this->missingPointCallback)?$this->missingPointCallback:false;
         foreach( $this->xBasedData as $x=>&$point )
         {
-            $xval = ifavail($point,'xval');
+            $xval = $point['xval'] ?? null;
             foreach( $this->series as &$series )
             {
                 if( $point && isset($point['data'][$series['name']]) )
@@ -859,7 +861,7 @@ class ChartJS3 extends Control
             foreach( $this->series as $series )
                 foreach( $series['data'] as $row )
                 {
-                    $v = ifavail($row,'xval','x');
+                    $v = $row['xval'] ?? $row['x'] ?? null;
                     if( is_numeric($v) )
                         $this->setXMinMax($v);
                 }
@@ -870,9 +872,13 @@ class ChartJS3 extends Control
             return $this;
         }
         $existing = [];
-        foreach( $this->series as &$series )
-            $existing[$series['name']] = array_map(function($d){ return self::phpXVal(ifavail($d,'xval','x')); },$series['data']);
-
+        foreach ($this->series as &$series)
+        {
+            $existing[$series['name']] = array_map(function ($d)
+            {
+                return self::phpXVal($d['xval'] ?? $d['x'] ?? null);
+            },$series['data']);
+        }
         $cur = self::phpXVal($this->xMin);
         $max = self::phpXVal($this->xMax);
         $missing = is_callable($this->missingPointCallback)?$this->missingPointCallback:false;
@@ -935,10 +941,10 @@ class ChartJS3 extends Control
                     log_error("No data $x_name/$y_name found");
                     break;
                 }
-                $val = ifavail($row,$y_name)?floatval($row[$y_name]):false;
+                $val = floatval($row[$y_name] ?? 0) ?: false;
                 if( $val === false )
                     continue;
-                $res[] = self::TimePoint(DateTimeEx::Make(ifavail($row,$x_name)),$val);
+                $res[] = self::TimePoint(DateTimeEx::Make($row[$x_name] ?? null), $val);
             }
             return $res;
         });
