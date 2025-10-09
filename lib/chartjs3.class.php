@@ -29,17 +29,17 @@ namespace ScavixWDF\Controls;
 
 use ScavixWDF\Base\Control;
 use ScavixWDF\Base\DateTimeEx;
+use ScavixWDF\Reflection\Attributes\Resource;
 
 /**
  * Represents a Chart.js chart
- *
- * @attribute[Resource('chart.min.js')]
- * @attribute[Resource('luxon.js')]
- * @attribute[Resource('chartjs-adapter-luxon.js')]
- * @attribute[Resource('chartjs-plugin-trendline.js')]
- * @attribute[Resource('chartjs-plugin-datalabels.js')]
- * @attribute[Resource('canvas2svg.js')]
  */
+#[Resource('chartjs3/chart.min.js')]
+#[Resource('chartjs3/luxon.js')]
+#[Resource('chartjs3/chartjs-adapter-luxon.js')]
+#[Resource('chartjs3/chartjs-plugin-trendline.js')]
+#[Resource('chartjs3/chartjs-plugin-datalabels.js')]
+#[Resource('chartjs3/canvas2svg.js')]
 class ChartJS3 extends Control
 {
     public $chart_title, $canvas;
