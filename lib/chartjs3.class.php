@@ -34,12 +34,12 @@ use ScavixWDF\Reflection\Attributes\Resource;
 /**
  * Represents a Chart.js chart
  */
-#[Resource('chartjs3/chart.min.js')]
-#[Resource('chartjs3/luxon.js')]
-#[Resource('chartjs3/chartjs-adapter-luxon.js')]
-#[Resource('chartjs3/chartjs-plugin-trendline.js')]
-#[Resource('chartjs3/chartjs-plugin-datalabels.js')]
-#[Resource('chartjs3/canvas2svg.js')]
+#[Resource('chart.min.js')]
+#[Resource('luxon.js')]
+#[Resource('chartjs-adapter-luxon.js')]
+#[Resource('chartjs-plugin-trendline.js')]
+#[Resource('chartjs-plugin-datalabels.js')]
+#[Resource('canvas2svg.js')]
 class ChartJS3 extends Control
 {
     public $chart_title, $canvas;
