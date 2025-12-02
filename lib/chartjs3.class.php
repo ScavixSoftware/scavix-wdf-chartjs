@@ -861,7 +861,7 @@ class ChartJS3 extends Control
             foreach( $this->series as $series )
                 foreach( $series['data'] as $row )
                 {
-                    $v = $row['xval'] ?? $row['x'] ?? null;
+                    $v = ($row['xval'] ?? $row['x']) ?? null;
                     if( is_numeric($v) )
                         $this->setXMinMax($v);
                 }
