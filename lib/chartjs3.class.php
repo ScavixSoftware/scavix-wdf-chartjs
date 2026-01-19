@@ -122,8 +122,12 @@ class ChartJS3 extends Control
      */
     public static function StrPoint(string $x,float $y,$row=false)
     {
-        if( self::$currentInstance && is_array(self::$currentInstance->detectedCategories) && !in_array($x,self::$currentInstance->detectedCategories) )
+        if (self::$currentInstance && is_array(self::$currentInstance->detectedCategories) && !in_array($x, self::$currentInstance->detectedCategories))
+        {
             self::$currentInstance->detectedCategories[] = $x;
+            natsort(self::$currentInstance->detectedCategories);
+            self::$currentInstance->detectedCategories = array_values(self::$currentInstance->detectedCategories);
+        }
         $pt = ['x'=>$x, 'y'=>$y];
         if( $row ) $pt['raw'] = $row;
         return $pt;
