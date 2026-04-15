@@ -373,8 +373,7 @@ class ChartJS3 extends Control
     /**
      * Get/Set scale related configuration.
      *
-     * @param string $axes Scale ID
-     * @param int $index Axes index
+     * @param string $scaleId Scale ID
      * @param string $name Config name
      * @param mixed $value Optional value
      * @return mixed Returns $this is value is given, else the data requested
